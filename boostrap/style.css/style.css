@@ -1,0 +1,30 @@
+body {
+    
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+  
+    
+}
+
+
+
+/*NAWIGACJA******************************/
+
+
+#main-nav {
+	font-style: oblique;
+    position: fixed;
+    
+    font-size: 25px;
+}
+
+#main-nav .nav-item a {
+  color: mediumpurple;
+    
+}
+
+#main-nav .nav-item a:hover {
+  color: lightgreen;
+    
+}
