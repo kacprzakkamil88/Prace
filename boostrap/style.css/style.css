@@ -3,10 +3,14 @@ body {
     background-color: beige;
     margin: 0;
     padding: 0;
+    
   
     
 }
 
+span {
+    color: red;
+}
 
 
 /*NAWIGACJA******************************/
@@ -17,6 +21,7 @@ body {
     position: fixed;
     
     font-size: 25px;
+    
 }
 
 #main-nav .nav-item a {
@@ -31,3 +36,32 @@ body {
 
 
 /*FRON END **********************************************************/
+
+#main-header {
+  
+	
+    color: royalblue;
+    background-image: url(http://cdn.player.one/sites/player.one/files/2016/10/14/march-comes-lion.jpg);
+    text-align: center;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+  
+    
+}
+
+
+
+#main-header .header-caption h1 {
+	font-size: 1em;
+    position: relative;
+    top: 150px;
+    
+    
+}
+
+#main-header .header-caption h1 {
+	font-size: 5em;
+    
+   
+}
