@@ -5,6 +5,7 @@ body {
     padding: 0;
     
   font-family: 'Anton', sans-serif;
+    box-sizing: border-box;
     
 }
 
@@ -21,7 +22,7 @@ span {
     position: fixed;
     
     font-size: 25px;
-    background-color: rosybrown;
+    background-color: rgba(80, 20, 90, 0.5);
     
 }
 
@@ -85,6 +86,47 @@ span {
 	width: 100%;
     height: 100%;
     margin: 5px;
+   
   
      
 }
+
+.maska {
+ 
+    text-align: center;
+    width: 100%;
+    height: 103%;
+    position: absolute;
+   
+/*    left: 4%;*/
+    top: 0%;
+    background-color: rgba(80, 20, 90, 0.5);
+    color:red;
+ 
+    opacity: 0;
+    
+}
+
+.maska:hover {
+    opacity: 1;
+    transition: 1s;
+    transform: rotate(360deg);
+    
+    
+}
+
+
+
+
+
+#maska1 {
+    position: absolute;
+    left: 21px;
+    top: 5px;
+	width: 89%;
+    height: 100%;
+    
+}
+
+
+
