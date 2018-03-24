@@ -34,6 +34,15 @@ span {
     
 }
 
+.navbar-light .navbar-toggler {
+    border-color: red;
+}
+
+.navbar-toggler {
+    background-color: royalblue;
+    border-radius: 25%;
+    border: solid 5px;
+}
 
 
 
