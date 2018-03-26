@@ -119,7 +119,7 @@ span {
 
 
 
-#maska1 {
+#maska1  {
     position: absolute;
     left: 21px;
     top: 5px;
@@ -127,6 +127,33 @@ span {
     height: 100%;
     
 }
+
+#maska2 {
+	 position: absolute;
+    left: 21px;
+    top: 5px;
+	width: 89%;
+    height: 100%;
+}
+
+#maska3 {
+	 position: absolute;
+    left: 21px;
+    top: 5px;
+	width: 89%;
+    height: 100%;
+}
+
+#maska4 {
+	position: absolute;
+    left: 21px;
+    top: 5px;
+	width: 89%;
+    height: 100%;
+}
+
+/************************UMIEJĘTNOŚCI****************************/
+
 
 
 
