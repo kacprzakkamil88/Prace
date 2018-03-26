@@ -156,6 +156,10 @@ span {
     height: 100%;
 }
 
+.maska .svg-inline--fa {
+    font-size: 3em;
+}
+
 /************************UMIEJĘTNOŚCI****************************/
 
 
@@ -166,4 +170,17 @@ span {
 }
 
 
+/***************************SLIDER********************************/
+
+#slider .svg-inline--fa{
+    color: mediumorchid;
+    font-size: 3em;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+#slider img {
+    position: relative;
+    right: 60%;
+}
 
