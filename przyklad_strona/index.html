@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS-->
+    <link href="style/style.css" rel="stylesheet">
+    
+    <!--FONTY-->
+    
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    
+    
+    <!--JAVASCRIPT-->
+    <script src="java/java.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Document</title>
+    
+</head>
+<body>
+  
+  
+   
+   
+
+
+<!----------------- NAWIGACJA BOCZNA ------------------>
+  
+  
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-asterisk"></i></a>
+
+  <a href="#"><strong>Pierwszy</strong></a>
+  <a href="#"><strong>Drugi</strong></a>
+  <a href="#"><strong>Trzeci</strong></a>
+</div>
+
+<h2>NAWIGACJA BOCZNA</h2>
+
+<span style="font-size:40px;cursor:pointer;color: red;" onclick="openNav()">&#9776; open</span>
+ 
+ 
+<!--------------- TYTUŁ ------------------------------>
+  
+  
+<div class="napisgora">PRZYKŁADOWA STRONA</div>
+  
+  
+ <!----------------  DOLNY PASEK  ---------------------------> 
+ 
+ 
+<div class="progress2"></div>
+
+
+<!-------------------    GALERIA   ---------------------->
+
+<h2 style="text-align:center; font-size: 40px; color: royalblue;"><strong>Nordic Places</strong></h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">I / V</div>
+    <img src="img/drift-ice-3050530_1280.jpg" style="width:100%; height: 40vw;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">II / V</div>
+    <img src="img/norway-2144782_1280.jpg" style="width:100%; height: 40vw;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">III / V</div>
+    <img src="img/oslo-3244289_1280.jpg" style="width:100%; height: 40vw;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">IV / V</div>
+    <img src="img/reykjavik-1988082_1280.jpg" style="width:100%; height: 40vw;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">V / V</div>
+    <img src="img/trondheim-2068810_1280.jpg" style="width:100%; height: 40vw;">
+  </div>
+    
+
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column kol-1">
+      <img class="demo cursor" src="img/drift-ice-3050530_1280.jpg" style="width:100%; height: 15vw; " onclick="currentSlide(1)" alt="Greenland">
+    </div>
+    <div class="column kol-2">
+      <img class="demo cursor" src="img/norway-2144782_1280.jpg" style="width:100%; height: 15vw; " onclick="currentSlide(2)" alt="Bergen">
+    </div>
+    <div class="column kol-3">
+      <img class="demo cursor" src="img/oslo-3244289_1280.jpg" style="width:100%; height: 15vw; " onclick="currentSlide(3)" alt="Oslo">
+    </div>
+    <div class="column kol-4">
+      <img class="demo cursor" src="img/reykjavik-1988082_1280.jpg" style="width:100%; height: 15vw; " onclick="currentSlide(4)" alt="Reykiavik">
+    </div>
+    <div class="column kol-5">
+      <img class="demo cursor" src="img/trondheim-2068810_1280.jpg" style="width:100%; height: 15vw;" onclick="currentSlide(5)" alt="Trondheim">
+    </div>    
+   
+  </div>
+</div><br><br>
+
+
+
+<!------------------------------   LUPA   ------------------------------------------->
+ 
+ 
+ <p class="wally"><strong>Where is Wally?</strong><p>
+
+<p class="find">Try to find him</p><br>
+
+<div id="img-zoom-container">
+  <img id="myimage" src="img/wally.jpg" width="600" height="400">
+  <div id="myresult" class="img-zoom-result"></div>
+</div><br><br>
+ 
+ 
+  
+  <!---------------------    KONIEC LUPY   ------------------------------------------------------>
+
+
+
+  <!------------------------   WALLY WALLY WALLY  ------------------------------------------->
+  
+  <div id="wally-face">
+      
+      <img src="img/wallyface.jpg" tittle="Wally Wally Wally" alt="Wally" width="250" height="550">
+      <div class="wally-napis"> Wally: Did you find me?</div>
+             
+         
+ 
+  </div>
+
+  <div class="wally-mask"><strong>It's me Wally. <br> You don't see me?</strong></div>
+  
+  <div id="wpis"><strong>
+      Did you find Wally? It's not easy. You have to focus your eyesight. He is pretty characterstic. He has sweater with red and white stripes. Circle glasses. And his cap? It's hard to forget this kind of cap. Nobode knows why Wally has wooden stick. He isn't old. Let's try again.
+      </strong>
+  </div><br><br>
+  
+  
+  <!---------------   FILM z YOUTUBE --------------------------------------->
+  
+  <div id="youtube">
+    <div class="youtubelink">LINK Z YOUTUBE</div>
+      
+ 
+  <iframe width="660" height="415" src="https://www.youtube.com/embed/lDHvS3jmHDU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  
+  </div>
+  
+
+  
+  
+  <!--------------------  FIXED FOOTER  -------------------------------->
+  <div class="footer">
+      <p><i>Kamil Kacprzak</i> . . . kacprzak.kamil88@gmail.com </p>
+   
+</div>
+ 
+ 
+  
+
+   
+   <!----------------- SKRYPTY  ------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="java/java.js"></script>
+</body>
+</html>

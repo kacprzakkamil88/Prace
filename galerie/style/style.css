@@ -1,0 +1,448 @@
+body {
+    
+    background-color: blanchedalmond;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+    color: red;
+/*    font-size: 25px;*/
+    
+}
+
+/***************************     NAWIGACJA   ************************************/
+
+
+.navbar-inverse {
+    
+        background-color: darkblue;
+    border-color: red;
+    color: white;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 3px solid red;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: white;
+    
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: #E91E63;
+    background-image: none;
+    border: 3px solid transparent;
+    border-radius: 50%;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: black;
+    background-color: lightblue; 
+   font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    height: 60px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: darkmagenta;
+}
+
+/***************************** NAPIS *****************************************/
+
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 70px;
+    color: darkblue;
+    
+    
+}
+
+
+
+/*****************************   GALERIA small pictures   ******************************************/
+
+.galeria {
+
+    margin: 66px;
+}
+
+.galeria img {
+
+    width: 300px;
+    padding: 5px;
+    filter: sepia(100%);
+    transition: 0.5s;
+}
+
+.galeria img:hover {
+    filter: sepia(0);
+    transform: scale(1.1);
+}
+
+/*****************************  FLip Cards  ***************************/
+
+
+/************************** FLIP CARDS 1 *************************/
+
+
+.flip-cards {
+    margin-left: 50px;
+	width: 300px;
+    height: 200px;
+   
+    position: relative;
+   
+    
+    background-color: blanchedalmond;
+
+    background-size: cover;
+    perspective: 400px;
+    
+}
+
+
+
+.flip-cards::before,
+.flip-cards::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../img/seoul-364118_640.jpg);
+    background-size: cover;
+    border: 3px solid #171212;
+    box-sizing: border-box;
+    transition: 0.6s transform linear;
+    backface-visibility: hidden;
+	
+}
+
+
+.flip-cards:hover::after {
+    transform: rotateY(180deg);
+	
+}
+
+.flip-cards::before {
+	background: url(../img/korean-food-3263032_640.jpg);
+    background-size: cover;
+    transform: rotateY(180deg);
+
+}
+
+.flip-cards:hover::before {
+    transform: rotateY(360deg);
+	
+}
+
+
+/**************************  FLIP CARDS 2 **********************************/
+
+.cards2 {
+   /* display: inline-block;
+    padding: 5px;*/
+    margin-left: 525px;
+    margin-top: -200px;
+
+	width: 300px;
+    height: 200px;
+   
+    position: relative;
+   
+    
+    background-color: blanchedalmond;
+     background-size: cover;
+    perspective: 400px;
+}
+
+.cards2::before,
+.cards2::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../img/japan-1043416_640.jpg);
+    background-size: cover;
+    border: 3px solid #171212;
+    box-sizing: border-box;
+    transition: 0.6s transform linear;
+    backface-visibility: hidden;
+	
+}
+
+
+.cards2:hover::after {
+    transform: rotateY(180deg);
+	
+}
+
+.cards2::before {
+	background: url(../img/asian-food-2090947_640.jpg);
+    background-size: cover;
+    transform: rotateY(180deg);
+
+}
+
+.cards2:hover::before {
+    transform: rotateY(360deg);
+	
+}
+
+
+/***************************** FLIP CARdS 3  **************************************/
+
+
+.cards3 {
+    
+   
+   /* display: inline-block;
+    padding: 5px;*/
+    margin-left: 1000px;
+    margin-top: -200px;
+
+	width: 300px;
+    height: 200px;
+   
+    position: relative;
+   
+    
+    background-color: blanchedalmond;
+   background-size: cover;
+  perspective: 400px;
+}
+    
+.cards3::before,
+.cards3::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../img/taxi-cab-381233_640.jpg);
+    background-size: cover;
+    border: 3px solid #171212;
+    box-sizing: border-box;
+    transition: 0.6s transform linear;
+    backface-visibility: hidden;
+	
+}
+
+
+.cards3:hover::after {
+    transform: rotateY(180deg);
+	
+}
+
+.cards3::before {
+	background: url(../img/usa-2662038_640.jpg);
+    background-size: cover;
+    transform: rotateY(180deg);
+
+}
+
+.cards3:hover::before {
+    transform: rotateY(360deg);
+	
+}
+
+
+
+/**************************   JAVA GALERIA  ******************************/
+
+.java1 {
+    
+   
+    margin-left: 100px;
+	width: 250px;
+    height: 150px;
+   
+    position: relative;
+   
+    
+   background-image: url(../img/sculpture-3167712_640.jpg);
+
+    background-size: cover;
+     transition: 2s;
+    display: block;
+/*    perspective: 400px;*/
+    
+}
+
+.java2 {
+    margin-left: 400px;
+	width: 250px;
+    height: 150px;
+     margin-top: -150px;
+   
+    position: relative;
+   
+    
+   background-image: url(../img/architecture-3272334_640.jpg);
+
+    background-size: cover;
+     transition: 2s;
+/*    perspective: 400px;*/
+    
+}
+
+
+.java3 {
+    margin-left: 700px;
+	width: 250px;
+    height: 150px;
+     margin-top: -150px;
+   
+    position: relative;
+   
+    
+   background-image: url(../img/montana-3284729_640.jpg);
+
+    background-size: cover;
+        transition: 2s;
+/*    perspective: 400px;*/
+    
+}
+
+.java4 {
+    margin-left: 1000px;
+	width: 250px;
+    height: 150px;
+     margin-top: -150px;
+   
+    position: relative;
+   
+    
+   background-image: url(../img/japan-1706942_640.jpg);
+
+    background-size: cover;
+    transition: 2s;
+/*    perspective: 400px;*/
+    
+}
+
+.java1:hover {
+ transform: scale(1.4);
+
+    z-index: 0;
+}
+
+.java2:hover {
+	
+ transform: scale(1.4);
+    z-index: 0;
+}
+
+.java3:hover {
+	
+ transform: scale(1.4);
+    z-index: 0;
+}
+
+.java4:hover {
+	
+ transform: scale(1.4);
+    z-index: 0;
+}
+
+/************************ OBRAZEK Z BUTTONEM *****************************/
+
+button {
+    font-size: 50px;
+    position: relative;
+    margin-left: 600px;
+    margin-top: 50px;
+    border-radius: 20%;
+   
+    
+}
+
+#most {
+    background-image: url(../img/rainbow-bridge-2086643_1280.jpg);
+    background-size: cover;
+    width: 1349px;
+    height: 200px;
+}
+
+
+/***************************  OBRAZKI Z JAVA  *****************************/
+
+
+
+
+#myszka #warszawa img{
+    position: relative;
+    width: 300px;
+    height: 220px;
+    margin-left: 250px;
+    border: 3px solid green;
+    border-radius: 25%;
+}
+
+
+#myszka #tokio img {
+    position: relative;
+    width: 300px;
+    height: 220px;
+    margin-left: 800px;
+    margin-top: -250px;
+     border: 3px solid green;  
+     border-radius: 25%;
+
+}
+
+/*
+#popup {
+    font-family: 'Hi Melody', cursive;
+	color: darkblue;
+    font-size: 25px;
+    display: none;
+}
+*/
+
+
+#popup1 {
+	position: relative;
+    width: 300px;
+    height: 220px;
+    margin-left: 275px;
+    margin-top: -150px;
+    font-family: 'Hi Melody', cursive;
+	color: red;
+    font-size: 25px;
+   display: none;
+}
+
+#popup2 {
+    position: relative;
+    width: 300px;
+    height: 220px;
+    margin-left: 850px;
+    margin-top: -200px;
+    font-family: 'Hi Melody', cursive;
+	color: red;
+    font-size: 25px;
+    display: none;
+
+}

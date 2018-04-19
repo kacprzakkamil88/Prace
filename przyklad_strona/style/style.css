@@ -1,0 +1,374 @@
+body {
+     height: 500vh;
+  margin: 0 auto;
+  background: linear-gradient(black, white);
+    
+   font-family: 'Acme', sans-serif;
+ box-sizing: border-box;
+}
+
+
+
+
+
+/****************** STYLIZOWANIE NAWIGACJI *************************/
+
+.sidenav {
+  
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: 	rgb(255, 255, 255, 0.75); 
+    overflow-x: hidden; 
+    padding-top: 250px; 
+    transition: 0.5s; 
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+    color: black;
+}
+
+
+.sidenav .closebtn {
+    position: relative;
+    top: -150px;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+    color: green;
+ 
+}
+
+.sidenav .closebtn:hover {
+    transform: scale(1.5);
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+h2 {
+    
+    color: red;
+}
+/***************** STYL DOLNY SCROLL *******************************/
+.progress2 {
+	  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+ 
+  z-index: 1;
+  background: linear-gradient(to right, darkred var(--scroll), transparent 0);
+}
+
+/*************************  TYTUŁ ************************/
+
+.napisgora {
+    font-family:'Lobster', cursive;
+    font-size: 50px;
+	color: lightcoral;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/*****************  SCROLL  ***************/
+
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+::-webkit-scrollbar-track { 
+    background: linear-gradient(black, white);; 
+    border: 2px solid white;
+     
+
+}
+ 
+
+::-webkit-scrollbar-thumb {
+    background: darkred; 
+     
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: lightcoral; 
+    
+}
+/********** KONIEC SCROLLA  ***********************/
+
+
+/**************  GALERIA  **************************/
+    
+
+
+
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    
+  display: none;
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+    color: darkred;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+   color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.numbertext {
+    color: darkred;
+    font-size: 50px;
+    padding: 40px 40px;
+    position: absolute;
+    top: 0;
+}
+
+
+.caption-container {
+    font-size: 25px;
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: lightcoral;
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 20%;
+  
+   
+}
+
+
+.demo {
+    filter: blur(2px);
+  opacity: 0.5;
+}
+
+.active,
+.demo:hover {
+  filter: blur(0px);
+  opacity: 1;
+}
+
+
+/*******************   LUPA   *************************************************/
+
+
+.wally {
+	text-align: center;
+    color: darkred;
+    font-size: 40px;
+}
+
+.find {
+	text-align: center;
+    color:  darkblue;
+    font-size: 20px;
+}
+
+
+#img-zoom-container {
+  position: relative;
+margin-left: 20px;
+
+
+}
+.img-zoom-lens {
+   
+  position: absolute;
+  border: 10px solid black;
+    filter: blur(2px);
+  
+  width: 60px;
+  height: 60px;
+  border-radius:50%;
+}
+
+.img-zoom-result {
+    margin-left: 100px;
+    position: absolute;
+  border: 5px solid darkred;
+
+  width: 600px;
+  height: 400px;
+display: inline-block;
+}
+
+@media screen and (max-width: 700px) {
+  #img-zoom-container {
+    flex: 50%;
+    max-width: 50%;
+  }
+    
+    .img-zoom-result {
+        flex: 50%;
+    max-width: 200%;
+        left:-100px;
+    }
+}
+
+
+/******************* WLLY  WALLY  WALLY  ***********************************/
+
+#wally-face {
+	display: inline-block;
+    border: 10px solid darkred;
+     position: relative;
+margin-left: 350px;
+    color: darkred;
+    
+}
+
+#wally-face:hover {
+    filter: blur(5px);
+    color: blue;
+}
+
+.wally-mask {
+	color: darkred;
+    position: absolute;
+    
+}
+
+#wpis {
+    position: absolute;
+    display: inline-block;
+    color: darkred;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 20px;
+    margin-top: 100px;
+    font-family: 'Gamja Flower', cursive;
+    transition: 0.5s;
+}
+
+#wpis:hover {
+	color: darkblue;
+    transform: rotate(180deg);
+    
+}
+
+.wally-mask {
+   
+    font-family: 'Gamja Flower', cursive;
+    text-align: center;
+    font-size: 35px;
+  position: absolute;
+margin-left:360px;
+     margin-top: -400px;
+    opacity: 0;
+}
+
+.wally-mask:hover {
+    opacity: 1;
+}
+
+
+/************************** YOUTUBE   ***********************/
+
+.youtubelink{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+    color: darkblue;
+}
+
+#youtube {
+    margin-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+    
+}
+
+/********************** FOOTER FIXED   *****************************************/
+.footer {
+
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: darkred;
+   text-align: center;
+}
